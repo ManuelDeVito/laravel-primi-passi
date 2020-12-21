@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/primo-passo', function () {
+    $data = [
+        'nome' => 'Manuel'
+    ];
+    return view('primo', $data);
 });
